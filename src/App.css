@@ -1,0 +1,231 @@
+
+
+
+ 
+.gridBlock{
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+.block1{
+grid-column: 15%; 
+background-color:rgb(7, 2, 78) ;
+height: 100vh;
+color: rgb(255, 255, 255);
+
+}
+
+.block2{
+  height: 100vh;
+  grid-column: 85%;
+  overflow-y: scroll;
+}
+
+
+@media (max-width : 846px){
+
+  .gridBlock{
+    display: grid;
+    grid-template-columns: 17% 90%;
+  }
+  
+  .block1{
+  grid-column: 10%;
+  /* background-color:rgb(199, 135, 135) ; */
+background-color:rgb(7, 2, 78) ;
+
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  }
+  
+  .block2{
+    height: 100vh;
+    grid-column: 90%;
+    background-color: antiquewhite;
+    overflow-y: scroll;
+  }
+
+}
+
+
+
+
+.cssDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#grid {
+  background-color: rgb(238, 243, 246);
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 1rem;
+
+}
+
+
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardBar {
+  display: flex;
+}
+
+.currency-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.currency-inner {
+  width: 17rem;
+  height: 7rem;
+  background-color: white;
+  padding: 1rem;
+  border-color: white;
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-one {
+  background-color: white;
+  width: 60%;
+  height: 19rem;
+}
+
+.container-two {
+  background-color: white;
+  width: 30%;
+  height: 19rem;
+}
+
+.upperContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.container-two {
+  padding: 2rem;
+}
+
+.pieChart {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lower-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  background-color: white;
+
+  margin: 2rem;
+}
+
+.leftLower {
+  width: 60%;
+}
+
+.leftLower-scroll{
+  overflow-y: scroll;
+  height: 10rem;
+
+}
+
+.rightLower {
+  width: 30%;
+
+}
+
+
+
+.topShelf {
+  display: flex;
+  padding-left: 3rem;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+.inputSearch {
+  background-image: url("search.png");
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+
+  .currency-container {
+    
+    flex-wrap: wrap;
+  }
+
+
+}
+
+@media (max-width: 1200px)   {
+
+  .currency-container{
+
+    flex-wrap : wrap ;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 840px) {
+  .second-container {
+    /* display: flex;
+    flex-direction: column; */
+    flex-wrap : wrap ;
+    justify-content: space-evenly;
+
+  }
+
+  .container-one {
+    width: 100%;
+  }
+
+  .container-two {
+    width: 50%;
+  }
+
+  .lower-container{
+    flex-wrap : wrap ;
+    /* justify-content: space-evenly; */
+
+  }
+
+  .leftLower{
+    width: 100%;
+  }
+
+  .rightLower{
+    width: 50%;
+
+  }
+}
+
+
+.hoverWord:hover {
+background-color: rgb(55, 67, 235);
+color: white;
+}
+
+
+@media (min-width:576px){
+  .toggle-Name{
+    display: none ;
+  }
+  
+
+}
